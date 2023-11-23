@@ -1,11 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import DriversView from '../views/DriversView.vue'
-import BussesView from '../views/BussesView.vue'
+import WorkerView from '../views/WorkerView.vue'
+import WorkerEditorView from '../views/WorkerEditorView.vue'
 import AssignmentsView from '../views/AssignmentsView.vue'
-import ContactsView from '../views/ContactsView.vue'
-import BussesEdit from '../views/BussesEdit.vue'
-import DriversEdit from '../views/DriversEdit.vue'
+import CandidateView from '../views/CandidateView.vue'
+import CandidateEditView from '../views/CandidateEditView.vue'
 
 const routes = [
     {
@@ -14,34 +13,29 @@ const routes = [
         component: HomeView,
     },
     {
-        path: '/drivers',
-        name: 'drivers',
-        component: DriversView,
+        path: '/workers',
+        name: 'workers',
+        component: WorkerView,
     },
     {
-        path: '/drivers/edit/:id?',
-        name: 'drivers-config',
-        component: DriversEdit,
+        path: '/workers/worker-editor/:id?',
+        name: 'worker-editor',
+        component: WorkerEditorView,
     },
     {
-        path: '/busses',
-        name: 'busses',
-        component: BussesView,
+        path: '/candidates',
+        name: 'candidates',
+        component: CandidateView,
     },
     {
-        path: '/busses/edit/:id?',
-        name: 'busses-config',
-        component: BussesEdit,
+        path: '/candidates/candidates-editor/:id?',
+        name: 'candidates-edit',
+        component: CandidateEditView,
     },
     {
         path: '/assignments',
         name: 'assignments',
         component: AssignmentsView,
-    },
-    {
-        path: '/contacts',
-        name: 'contacts',
-        component: ContactsView,
     },
 ]
 

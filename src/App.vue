@@ -1,19 +1,19 @@
 <template>
     <nav>
-        <router-link to="/">Home</router-link> | <router-link :to="{ name: 'drivers' }">Drivers</router-link> |
-        <router-link :to="{ name: 'busses' }">Busses</router-link> |
-        <router-link :to="{ name: 'assignments' }">Purpose</router-link> |
-        <router-link to="/contacts">Contacts</router-link>
+        <router-link to="/">Main</router-link> | <router-link :to="{ name: 'workers' }">Workers</router-link> |
+        <router-link :to="{ name: 'candidates' }">Candidates</router-link> |
+        <router-link :to="{ name: 'assignments' }">Assignment</router-link>
     </nav>
     <router-view />
 </template>
 
 <style lang="scss">
+@import './assets/style/index.scss';
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    // text-align: center;
+    text-align: center;
     color: #2c3e50;
 }
 

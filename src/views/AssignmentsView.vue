@@ -1,17 +1,16 @@
 <template>
-    <div>
-        <assignment-creator />
-        <assignments-list />
+    <div class="assignments__container">
+        <div class="assignments__wrapper">
+            <assignment-creator />
+            <assignments-list />
+        </div>
     </div>
 </template>
 
 <script>
+import AssignmentCreator from '../components/AssignmentsCreator.vue'
 import AssignmentsList from '@/components/AssignmentsList.vue'
-import AssignmentCreator from '../components/AssignmentCreator.vue'
-export default {
-    name: 'AssignmentsView',
-    components: { AssignmentsList, AssignmentCreator },
-}
+export default { name: 'AssignmentsView', components: { AssignmentCreator, AssignmentsList } }
 </script>
 
 <style lang="scss" scoped></style>
